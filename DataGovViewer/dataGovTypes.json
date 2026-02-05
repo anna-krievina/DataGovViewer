@@ -1,0 +1,18 @@
+﻿{
+  "DataGovConfig": {
+    "DataGovTypes": {
+      "PlantType": {
+        "ResourceId": "5071e6be-50de-48c5-96b3-4adb1d06b0fb",
+        "Description": "Latvijas aizsargāto augu šķirņu valsts reģistrs ir augu šķirņu saraksts, uz kurām Latvijas teritorijā kādai personai (selekcionara tiesību īpašniekam) ir piešķirta intelektuālā īpašuma tiesību aizsardzība."
+      },
+      "ResultsType": {
+        "ResourceId": "a03cc5d8-c92e-49b9-9455-3c93110317c5",
+        "Description": "Datu kopa ietver informācijas apkopojumu par augšņu agroķīmiskās izpētes rezultātiem lauksaimniecībā izmantojamā zemē laika periodā no 1996. līdz 2024. gadam, reprezentējot tādus rādītājus kā kaļķojamās augsnes, to skaitā augsnes, kurām nepieciešama pamatkaļķošana; platības ar nepietiekamu organisko vielu saturu; platības ar ļoti zemu, zemu, fosfora un kālija saturu augsnē."
+      },
+      "TPLType": {
+        "ResourceId": "784c50cb-31d0-4780-8a7b-7208f7018125",
+        "Description": "Apkopoti dati par valsts finansētajiem tehniskajiem palīglīdzekļiem."
+      }
+    }
+  }
+}

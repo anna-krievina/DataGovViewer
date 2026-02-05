@@ -1,0 +1,32 @@
+﻿@model DataGovModel
+@{
+    ViewData["Title"] = "Data";
+}
+@section scripts {
+    <script>
+        const dataList = @Html.Raw(Json.Serialize(Model.DataList));
+        const columnsList = @Html.Raw(Json.Serialize(Model.Columns));
+    </script>
+    <script src="~/js/DataGov.js" asp-append-version="true"></script>
+}
+
+<div>
+    <p class="text-center">@Model.Description </p>
+
+    @if (Model.ErrorMessage != null)
+    {
+        <p style="color:red">@Model.ErrorMessage</p>
+    }
+    else
+    {
+        <div class="d-flex justify-content-end mb-2">
+            <a asp-controller="DataGov" asp-action="ExportCsv" asp-route-type="@Model.Type" class="btn btn-primary">
+                Eksportēt CSV
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table id="dataTable" class="table table-striped table-light">
+            </table>
+        </div>
+    }
+</div>
